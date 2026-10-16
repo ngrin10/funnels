@@ -38,4 +38,6 @@ Next, inspect the repo for the event, current component and design rules. Do not
 - Non-goals: form, calendar rules, offer, price, and page layout.
 - Status: DRAFT. Event and release checks still need to be completed. The baseline alone does not block the wording fix.
 
-The prompt and handoff must carry these same unknowns. Do not call this a completed build or a proven conversion lift.
+The builder version, prompt, and handoff must carry these same unknowns. Do not call this a completed build or a proven conversion lift.
+
+Data rules for this fictional narrow edit: no new fields, storage, joining, sharing, or retention changes are in scope. Existing tracking must be checked without adding personal answers.

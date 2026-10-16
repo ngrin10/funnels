@@ -1,60 +1,67 @@
 # Build prompt: <spec id and surface>
 
-Status: <match spec>
-For: <builder and owned changes>
-Spec version: <version/date>
-Send with: <required files and confirmed access, or self-contained>
+Status / version: <match source spec>
+For: <builder or team and owned change ids>
+Send with: <required files and confirmed access, or fully self-contained>
+Owner note: <who gets this, what it asks them to do, dates/owners/costs it commits to, open items>
 
-Copy the block below into the builder's AI tool.
+Copy the filled block into the builder's AI tool.
 
 ```text
-Build <owned changes> for <product>. Work only within the authorized scope below.
+Build <owned changes> for <product>. Use fifth-grade words when explaining the work. Keep exact code and event names.
 
 1. CONTEXT
-Product, buyer, offer, price/terms, and what happens after purchase:
+Product, buyer, offer, terms, delivery, first value:
 <filled facts>
-Current path and evidence:
-<steps, routes, sources with dates; full number definitions or NOT KNOWN>
-Inputs not available and source conflicts:
-<facts>
-Repo/tool, design system, components, ids, owners, due date and timezone:
+Current path and source dates:
+<steps, routes, numbers with tool/account, dates, group, count/base, unit, labels>
+Decided vs proposed, by whom and when:
 <values>
-Required files supplied with this prompt:
-<contents or accessible paths; no dependence on earlier chat>
+Where things live, who owns them, due date/timezone:
+<repo/tool, components, design, config, ids, tickets, flags>
+Not included here, and shared dependencies:
+<other changes/owners; build order; what must stay as it is and why>
+Inputs not read, conflicts, data rules, and missing skills:
+<limits; skills actually read; needed help; affected work>
+Required files supplied:
+<content or accessible paths; no unseen chat; no unnecessary sensitive data>
 
 2. SPEC
-Status and decisions:
-<match source spec; approvals and blockers per change>
-Goal, main metric, and non-goals with reasons:
-<values>
-For EACH change, with the same id:
-<reason, owner, today, next, trigger, audience, exclusions, destinations,
-data contracts/dependencies, exact copy and fallbacks, all states,
-responsive/accessibility rules, acceptance checks, recovery steps>
+Status and goal:
+<match source; baseline/goal and known limits>
+For EACH owned change, use the same id:
+<reason, owner, today, next, build location, trigger/group/exclusions,
+branches/destinations, inputs and existing/missing systems, exact copy,
+tokens/fallbacks, states, design/device rules, event links, main measure,
+acceptance proof, rollout/recovery, prior work and surface check>
 
 3. ROLLOUT AND TEST
-<fix or test per change; assignment, arms, split, flag, guardrails,
-baseline, minimum worthwhile change, statistical method, sample and time plan, delayed outcomes, stop rule, owner; no made-up rules>
+<fix/test per change; control/variant, group, assignment/split, flags,
+guardrails, baseline, minimum useful change, statistical method,
+sample/time plan, delayed outcomes, stop/read rule and owner;
+needed specialist skill or N/A with reason; do not guess>
 
 4. EVENTS
-<complete event table from spec: names, NEW/EXISTING/NOT KNOWN,
-triggers, allowed properties, count unit/dedupe, destination/account,
-consent, owner, and test proof>
+<full spec table: name, NEW/EXISTING/NOT KNOWN, live/broken/missing/not checked,
+trigger, allowed properties, count/dedupe, tool/account, consent, owner, proof>
 
 5. QUESTIONS BEFORE BUILDING
-<each unresolved question, owner/check, affected change, what each answer changes>
-Ask blocking questions before dependent work. An unknown baseline may block
-measurement while a missing payment rule blocks payment work. Continue
-unblocked work. Never silently turn a proposal into a decision.
+<each question or skill gap, who settles it, check, affected change,
+what each answer changes, and what stage it blocks>
+Ask blocking questions before dependent work. Say "I don't know" when needed.
+Get a suitable available skill before doing work beyond current methods.
+A skill cannot replace missing data. Do not guess sensitive facts or causes.
+Continue only work that does not depend on a missing answer.
 
 6. HOW TO WORK
-Inspect the repo and current behavior. Reuse its components and conventions.
-Implement only authorized changes. Preserve exact approved copy and terms.
-Test the stated happy path, failures, back/refresh, repeat use, and devices.
-Use sandbox payments or mocks; require authorization for real charges.
-Check events and recovery. Return acceptance checks with evidence, changed
-files, tests actually run, limitations, and remaining blockers.
-Do not deploy, publish, or message others unless separately authorized.
+Read the source spec and current code. Confirm versions and inspect live behavior.
+Reuse real components and data sources. Build only the authorized scope.
+Use exact approved copy and real terms. Keep sample values out of production.
+Test named states, branches, back/refresh, repeat use, devices, events, and recovery.
+Use sandbox payments or mocks. A real charge needs authorization.
+Show each acceptance line as passed, failed, not run, or blocked, with proof.
+Return changed files, checks actually run, limits, help needed, and next action.
+Do not deploy, publish, or message others unless authorized for that action.
 ```
 
-Cold-read the filled block with no chat history. Repair gaps in both the prompt and spec. Record review type and unresolved blockers. Do not mark an unchecked prompt ready.
+Cold-read the filled block with no chat history. Fix the source spec, builder version, prompt, and handoff together. Record review type and blockers. Never mark blocked changes ready.

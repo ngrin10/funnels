@@ -1,13 +1,32 @@
 # Build from the spec and design
 
-Check readiness per change. Read the spec, supplied context, exact copy, events, design, and repo instructions. Inspect what already exists before adding code.
+Read the canonical spec, the version for the builder, the prompt, exact copy, event table, and linked design. Check their versions. Use the repo's own instructions. Run the limits check for any tool or code area that needs more expertise.
 
-Resolve conflicts between a frame, spec, and live product before changing the affected behavior. Check the decision's owner and date. A polished frame does not settle billing rules or feature access.
+## Find the real work
 
-Map each change to routes, components, data calls, permissions, flags, and event hooks. Reuse the real design system. Read prices, plan limits, dates, balances, and status from their source. Do not type them into a component unless the spec explicitly defines them as fixed content.
+Read the route and current components. Compare live behavior, the spec, and the design. Mark what exists, what needs a change, and what is blocked. A frame shows appearance; it does not settle billing, access, data, or business rules.
 
-Implement the happy path and the named states. Handle back, refresh, slow requests, retries, duplicate actions, and partial success. Preserve input when a request fails. Keep secrets and personal data out of logs and events.
+| Change | Route / component | Current behavior | Needed work | Data or config source | Dependency / owner | Test proof |
+|---|---|---|---|---|---|---|
 
-Verify exact copy and fallbacks, correct destinations and access, responsive layout, keyboard behavior, allowed event properties, dedupe, test allocation, and recovery. Use the project's checks and sandbox transactions as appropriate. Never make a real purchase just to obtain proof without authorization.
+Use the owner's version to divide work, but read shared dependencies so one change does not break another. Keep out-of-scope work visible with its reason.
 
-Return evidence against each acceptance line. Distinguish built, tested, deployed, and measured. Link the preview or PR when available. Name checks not run and why. Deployment and messages require authorization beyond a spec request.
+## Use the actual system
+
+Reuse the shell, components, tokens, and data hooks. Read changing prices, limits, dates, balances, and access from their source. Define loading, missing, and error behavior. Do not type sample values into production code.
+
+Use approved exact copy. Resolve a conflict between the copy table and frame before coding that text. Keep annotation text and layer names out of the UI. Check which frames are active and which are history.
+
+## Make rules testable
+
+Implement triggers, groups, exclusions, branch rules, back, refresh, repeat use, retries, and partial success. Preserve input after failure. Avoid duplicate records or charges. Keep secrets and sensitive data out of logs and events. Use the existing tracking wrapper and event names when they apply.
+
+Build a blocked part behind a disabled flag only if the user authorized that work and its behavior is clear. A flag does not make an unresolved price or access rule safe to guess.
+
+## Show proof
+
+Check each acceptance line with the relevant evidence: screen, query, test, sandbox transaction, or preview. Verify the payment and access together if both are affected. Check the right tracking account and allowed properties. Test turning the change off and returning to the old flow where required.
+
+For each line, report passed, failed, not run, or blocked. Say what was actually tested and what remains. Keep technical test detail short and explain why it matters in plain words.
+
+Distinguish built, tested, deployed, and measured. Open or link a PR when authorized and possible. A spec request alone does not authorize a deployment, real charge, or message to another person.

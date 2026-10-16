@@ -1,59 +1,75 @@
 # Spec <id>: <name>
 
-Status: DRAFT / READY FOR BUILD
+Status: DRAFT / READY FOR BUILD; show status per change if mixed
 Version / updated / timezone: <values>
-Owner / decider / approver if needed / builder: <roles>
+Owner / decider / approver if needed / builders: <roles>
 Due date / estimate: <values or NOT KNOWN>
-Context: <path, include needed facts in the builder pack>
-Idea: <exact supplied words with source/date, or labeled paraphrase>
-Scope: <path step; linked changes and dependencies>
+Context and output home: <private paths>
+Idea: <supplied exact words with source/date, or labeled paraphrase>
+Path step / changes: <list and why linked changes stay together>
+Extends or replaces: <prior spec/version, or new>
 
 ## Checkpoint
 
-<Problem, baseline or unknown, proposed changes, owner, main measure, open decisions. Keep this short.>
+<Problem, number today or unknown, changes, owners, main measure, used/missing inputs, decisions and help needed.>
+
+## Limits and skills
+
+<What can be done well; missing methods, facts, access, or experts; skills actually read; blocked parts and safe next work.>
+
+## Data rules
+
+<Allowed fields, safe storage, joining/sharing, retention, consent, owner, and blocked work. Carry the exact project rules or NOT KNOWN; do not assume.>
 
 ## Inputs and evidence
 
-<Used sources with dates, unavailable inputs, old tests and results, conflicts and decisions.>
+<Sources/dates, product facts, current screen version, used and unavailable inputs, prior tests and how this differs, conflicts and decisions.>
 
 ## Goal and success measure
 
-<Main metric, target, source/account, window/cohort, numerator/denominator, unit, label, outcome delay, guardrails. Use the measurement reference.>
+<Main result, baseline, goal, tool/account, pull date, window/group, counted unit, rate base, units, label, time needed for outcomes, guardrails. No unsupported claim of cause.>
 
 ## Path today
 
-<Steps, audiences, routes, counts and next actions. Carry full number definitions from context.>
+<Steps, people, routes, counts, next actions. Use full number definitions. Distinguish selection, paid result, delivery, and first value.>
+
+## Outputs and inputs
+
+| Change / visible item or action | What must be true | Source / exists now? | Missing work and owner | Missing or error state |
+|---|---|---|---|---|
 
 ## C1: <change>
 
-- Reason and user story: <As a..., I need..., so...; source or hypothesis>
-- Owner / estimate / date: <values>
-- Today: <live screen, behavior, exact copy, evidence/date; label stand-ins>
-- Next: <exact screen, rules, destinations, branch conditions>
-- Trigger / audience / exclusions / exit: <values>
+- Reason and user need: <who needs what and why; evidence or hypothesis>
+- Owner / estimate / date / status: <values>
+- Today: <live screen, behavior, exact copy, source/date; label stand-ins>
+- Next: <exact screen, rules, destinations, branches>
+- Trigger / group / exclusions / exit: <values>
 - Build location: <repo/tool, route, components, config, ids>
-- Data and dependencies: <inputs, outputs, owners, failure behavior>
-- Copy: <exact text for each state; tokens, fallback text, supported claims>
-- States: <loading, empty, error, success, back, refresh, repeat; reason for any N/A>
-- Design: <existing components, frames or not drawn, responsive and accessibility rules>
-- Events: <table below; view/tap/complete as applicable>
-- Judged by: <main metric and guardrails; dashboard/query, window, target>
-- Rollout: <fix or test; allocation, flags, assignment, schedule, owner>
-- Recovery: <disable/revert steps, data or billing effects, owner, verification>
-- Acceptance: <checkable behavior and required proof, including events and failure cases>
-- Prior tests: <what happened and how this differs, or NOT KNOWN>
-- Priority: <severity, or modeled reach × absolute lift × value; effort and confidence>
+- Inputs and shared work: <data, owners, missing systems, order, failure behavior>
+- Copy: <exact text by state/plan; tokens, source, format, empty version, claim support>
+- States: <loading, empty, error, success, back, refresh, repeat, dismissed/returning as needed; reason for N/A>
+- Design: <system, frame or not drawn, devices and access needs>
+- Events: <full table below; exact names and actual status>
+- Judged by: <main result, baseline/goal, dashboard/query, window, other checks>
+- Rollout: <fix/test, flag, group/split, schedule, owner, dependencies>
+- Recovery: <how to turn off or revert, data/payment effects, owner, check>
+- Acceptance: <observable behavior and proof, including failures, events, payment/access if affected>
+- Prior work: <tried before, result, how this differs, or NOT KNOWN>
+- Surface check: <guide used; check that changed or confirmed the idea; reason and limits>
+- Priority: <severity or stated model, reach/value/effort/confidence; not ranked if missing>
+- Help needed: <skill, facts, access, expert, affected decision; or none for this scope>
 
-Repeat for each change. Keep the same ids in all docs.
+Repeat for every change. Keep the same ids in all docs.
 
 ## Events
 
-| Change | Name | NEW / EXISTING / NOT KNOWN | Exact trigger | Properties and allowed values | Count unit / dedupe | Destination / account | Consent rules | Owner | Test proof |
-|---|---|---|---|---|---|---|---|---|---|
+| Change | Name | NEW / EXISTING / NOT KNOWN | Live / broken / missing / not checked | Exact trigger | Allowed properties | Count / dedupe | Tool/account | Consent rules | Owner | Test proof |
+|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Test plan
 
-<For each test: hypothesis, control, variant, assignment unit, split/holdout, exclusions, main metric, guardrails, baseline, minimum worthwhile change, statistical method, sample plan, minimum duration, outcome delay, stop rule, read date and owner. For a fix: N/A with rollout reason.>
+<For each test: hypothesis, control/variant, stable assignment unit, group/split/holdout, exclusions, main result, guardrails, baseline, minimum useful change, statistical method, sample/time plan, outcome delay, stop rule, read date/owner, specialist skill used or missing. For a fix: N/A with real rollout reason. Never invent a universal rule.>
 
 ## Non-goals
 
@@ -61,13 +77,13 @@ Repeat for each change. Keep the same ids in all docs.
 
 ## Open items
 
-| Question | What each answer changes | Owner / check | Affected change | Blocks drafting / building / launch / measurement |
+| Question or missing skill | What each answer changes | Owner / check / needed skill | Affected change | Blocks draft / build / launch / measurement |
 |---|---|---|---|---|
 
 ## Approval and readiness
 
-<Decisions made, by whom and when; existing authorization; blockers per change.>
+<Decisions, by whom/when, current authorization, and blockers per change. A proposal is not a decision.>
 
 ## Review log
 
-<Date, version, self-review or independent review, gaps found, changes made, checks actually run, remaining blockers.>
+<Date, version, independent review or self-review, gaps found, files repaired, checks actually run, remaining blockers. Newest first; body carries current rules.>

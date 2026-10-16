@@ -1,0 +1,18 @@
+{
+  "what": "Describe the question this pull answers",
+  "pulled": "NOT KNOWN: date, time, and timezone of the pull",
+  "source": "NOT KNOWN: system and report or query",
+  "account": "NOT KNOWN: verified account or project",
+  "window": {"start": "NOT KNOWN", "end": "NOT KNOWN", "timezone": "NOT KNOWN"},
+  "group_rules": "NOT KNOWN: who is included and excluded",
+  "count_unit": "NOT KNOWN: people, sessions, accounts, orders, or other",
+  "metric": "NOT KNOWN: exact meaning",
+  "numerator": null,
+  "denominator": null,
+  "value": null,
+  "unit": "NOT KNOWN: rate, count, currency, or other",
+  "label": "NOT KNOWN",
+  "checks": [],
+  "limits": ["Template only; not a real data pull"],
+  "privacy": "NOT KNOWN: allowed data and storage home"
+}

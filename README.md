@@ -1,49 +1,53 @@
 # Funnels
 
-A public AI skill that turns a rough funnel idea into a clear plan for a builder.
+Turn an idea into a clear spec a builder can use. Ask for missing facts. Use fifth-grade words. Say what is not known and when another skill is needed.
 
-It reads what is already known, asks a few useful questions at a time, and fills the spec, copy, screen brief, build prompt, and handoff. Missing facts stay visible. It works for landing pages, signup, forms, popups, paywalls, onboarding, booking, next offers, and lifecycle messages.
+The core follows eight steps: capture, ground, shape, check the surface, write, draw, make the build prompt, and hand over. It includes fuller guides for copy, screens, signup, forms, popups, paywalls, onboarding, and the flow after purchase.
 
 ## Install
 
-Download or clone this repo. Keep `SKILL.md`, `references/`, and `examples/` together in a folder named `funnels`.
+Download the skill archive or clone this repo. Keep the whole `funnels` folder together, including `SKILL.md`, `references/`, `examples/`, and `scripts/`.
 
-- **Codex:** place that folder in `~/.agents/skills/`.
-- **Claude Code:** place it in `~/.claude/skills/`.
-- **Other AI tools:** provide `SKILL.md` and the bundled reference files as context. Ask the tool to follow the workflow. Skill auto-loading depends on the host.
+- Codex: place the folder in `~/.agents/skills/`.
+- Claude Code: place the folder in `~/.claude/skills/`.
+- Other AI tools: provide `SKILL.md` and its relevant bundled files as context. Auto-loading depends on the host.
 
-No API key, paid connector, or other skill is required. Live tools help when available; the skill marks unavailable evidence clearly.
+The core can work with supplied files. Deep work may need another skill, the right data, tool access, or a qualified person. The skill must name that gap before relying on a method it does not have.
 
 ## Try it
 
-> Use funnels. Turn this idea into a dev spec and build prompt. Read the notes first. Ask for missing facts in small rounds. Do not guess.
+> Use funnels. Turn these notes into a source spec, a version for each builder, a build prompt, and a short handoff. Read what I supplied first. Ask a few questions at a time. Use fifth-grade words. Do not assume missing facts. Tell me which parts need another skill or more evidence.
 
-Then paste the idea, share the current page or screen if available, and provide any product notes or results.
+For a small job:
 
-For a smaller job:
-
-> Use funnels to improve this form. Keep the current design. Ask only questions that change the work.
+> Use funnels to spec this form fix. Keep the current style. Ask only what changes the work.
 
 ## What it makes
 
-By default, save private project work outside this public skill repo:
+Save project work in a private project folder, outside this public skill repo. Use the project's current paths when they exist.
 
-- `context/funnel-context.md`: known facts, sources, conflicts and missing fields.
-- `specs/<id>-<name>.md`: source of truth for each change.
-- `deliverables/<id>-build-prompt.md`: prompt with the builder's needed context.
-- `deliverables/<id>-handoff.md`: short owner handoff.
-- Screen briefs and copy tables as needed.
+| File | Job |
+|---|---|
+| `context/funnel-context.md` | Facts, sources, field states, conflicts, skill needs |
+| `specs/spec-NN-name.md` | The source spec |
+| `deliverables/spec-NN-for-team.md` | The spec split for the builder or team |
+| `deliverables/prompt-surface-team.md` | One paste-in block in six parts |
+| `deliverables/handoff-NN.md` | Short note for the owner |
+| `data/dated-pull.json` | Allowed data pull with `what`, `pulled`, and clear definitions |
+| DEV section or screen brief | Today, Next, and build notes per change |
 
-Use the project's existing paths when they differ. A draft can contain unknowns. A ready build cannot require the builder to guess.
+A draft may contain unknowns. A ready build must not require guesses for the changes marked ready.
 
-## Included guidance
+## What it does well
 
-The skill combines context gathering, question-to-field mapping, conversion checks, plain copy, screen planning, and build review. It is written as fresh, general guidance. It does not bundle client packs, transcript libraries, private links, or internal results. The examples are fictional.
+It sorts facts, asks questions, maps the flow, checks for gaps, and keeps the files in sync. It uses plain writing and clear checks. It pushes back on unsupported claims and sensitive-data assumptions.
 
-Start with [SKILL.md](SKILL.md), [the interview](references/interview.md), or [the example](examples/booking-page.md). Use [review cases](examples/review-cases.md) to try the behavior in an AI session.
+It does not teach every part of ads, finance, statistics, health, law, or security. It must find and read the right available skill or name the missing help. More skills do not make missing facts known.
 
-## Check the package
+Read [the core skill](SKILL.md), [limits](references/limits.md), [coverage](references/coverage.md), and [the example](examples/booking-page.md), and [plain limit statements](examples/limits-in-action.md).
 
-Run `python3 scripts/validate.py` from this repo. It checks local links, required files, frontmatter, template sections, and common private-data patterns. It does not prove interview quality or catch every private detail; review all files before publishing.
+## Check it
 
-Licensed under [MIT](LICENSE).
+Run `python3 scripts/validate.py`. Use [review cases](examples/review-cases.md) to try behavior in an AI session. Use `--private-terms` with a private file outside this repo to check extra names or terms before sharing. Never add that private file to the package. Package checks do not prove how every model will behave or catch every private detail.
+
+This is fresh, general guidance. No client packs, raw transcripts, private links, internal results, or private sales scripts are included. Examples are fictional. Licensed under [MIT](LICENSE).
