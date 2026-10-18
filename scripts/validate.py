@@ -14,13 +14,18 @@ GUIDES = (
     'limits', 'research', 'offer-brief', 'evidence', 'writing', 'coverage',
     'plain-terms', 'post-purchase',
 )
+PLAYS = (
+    'offers', 'low-ticket-ascension', 'call-funnels', 'sales-videos', 'ads-to-page',
+    'positioning', 'ecom', 'consumer-apps', 'retention', 'health-offers',
+)
 SURFACES = ('pages', 'signup', 'forms', 'popups', 'paywalls', 'onboarding')
 REQUIRED = ['SKILL.md', 'README.md', 'LICENSE', 'scripts/validate.py'] + [
     f'references/{name}.md' for name in GUIDES
 ] + [f'references/surfaces/{name}.md' for name in SURFACES] + [
     'references/data-template.json', 'examples/booking-page.md',
     'examples/review-cases.md', 'examples/limits-in-action.md',
-]
+    'references/plays.md',
+] + [f'references/plays/{name}.md' for name in PLAYS]
 SECTIONS = {
     'references/context-template.md': ['Limits and help needed', 'Inputs', 'Field list', 'Path today', 'Decisions and conflicts', 'Outputs and inputs', 'Rules'],
     'references/spec-template.md': ['Checkpoint', 'Limits and skills', 'Data rules', 'Inputs and evidence', 'Goal and success measure', 'Outputs and inputs', 'Events', 'Test plan', 'Open items', 'Approval and readiness', 'Review log'],

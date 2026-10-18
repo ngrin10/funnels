@@ -4,6 +4,10 @@ Turn an idea into a clear spec a builder can use. Ask for missing facts. Use fif
 
 The core follows eight steps: capture, ground, shape, check the surface, write, draw, make the build prompt, and hand over. It includes fuller guides for copy, screens, signup, forms, popups, paywalls, onboarding, and the flow after purchase.
 
+## Plays
+
+[Plays](references/plays.md) holds patterns other teams have used: offers, low ticket to high ticket, call funnels and show rate, sales videos, ads to page, positioning, online stores, consumer apps, keeping buyers, and health offers. Each play says when it fits and what to watch. They are rewritten in plain words from public talks. Numbers are what others said, not checked facts, and never a goal for your project.
+
 ## Install
 
 Download the skill archive or clone this repo. Keep the whole `funnels` folder together, including `SKILL.md`, `references/`, `examples/`, and `scripts/`.

@@ -1,6 +1,6 @@
 # What is included and what still needs help
 
-This package uses fresh, general guidance. It does not include raw source packs, private client facts, transcript libraries, fixed campaign recipes, or internal scripts.
+This package uses fresh, general guidance. It does not include raw source packs, named operator recipes, private client facts, transcript libraries, fixed campaign recipes, or internal scripts.
 
 | Area | Included method | Where | Limit |
 |---|---|---|---|
@@ -21,6 +21,7 @@ This package uses fresh, general guidance. It does not include raw source packs,
 | After purchase | Delivery, booking, prep, recovery, later use | post-purchase.md | No private cadence or sales script included |
 | Screen craft | Questions to blocks, hierarchy, input truth, render checks | screens.md | New design work may need a dedicated design skill |
 | Build handoff | Real components, live diff, contracts, states, proof | build.md | New tools or code areas may need another skill |
+| Plays to test | Patterns from public operator talks for offers, low ticket, calls, sales videos, ads to page, positioning, stores, apps, keeping buyers, health | plays.md, plays/ | Test ideas only; numbers are stated, not checked |
 | Measurement | Number definitions, known limits, test needs | measurement.md | No universal test size, time, or causal answer |
 | Delivery | Source spec, builder view, six-part prompt, cold read | *-template.md | Only checked work can be called ready |
 

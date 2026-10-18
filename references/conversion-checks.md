@@ -12,6 +12,8 @@ Use the guide for the step being changed. Read the full guide before giving a fu
 | Setup, first use, stalled and returning users | [Onboarding](surfaces/onboarding.md) | First value, time to value, later use |
 | Delivery, booking, confirmation, recovery, later use | [After purchase](post-purchase.md) | Delivery, held calls, paid sales, or useful return |
 
+For patterns worth testing on each step, see [plays](plays.md). Plays are test ideas, not rules.
+
 Write one line per change: which check changed or confirmed the idea, why, what is evidence, and what is still a guess.
 
 These guides help frame the spec and ask useful questions. They do not replace a skill needed for deep design, test design, tracking, billing, price strategy, or cause analysis. Use [limits](limits.md) when the task crosses that line.
