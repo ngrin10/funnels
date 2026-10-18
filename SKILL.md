@@ -73,6 +73,8 @@ Show a short checkpoint using [the checkpoint template](references/checkpoint-te
 
 Use [conversion checks](references/conversion-checks.md) to route to pages, signup/quiz, forms, popups, paywalls, or onboarding. Use [after purchase](references/post-purchase.md) for delivery, calls, recovery, and later use.
 
+Check [plays](references/plays.md) for patterns other teams have used on this step. A play is a test idea, not proof. Use one only when this project's facts fit it, and say why.
+
 Record which check changed or confirmed each proposal and why. Separate a proven broken behavior from an idea to test. Rank repairs by severity. Rank other work only with stated reach, value, effort, and confidence. Do not invent an expected lift. Use a supplied estimate only as a marked guess; otherwise leave the rank open and ask. Do not let a score imply proof.
 
 These guides help check a spec. They do not train the AI in every specialty. Use another skill for a deep audit, new data system, price decision, test design, ads plan, or claim about why a result changed when needed.
